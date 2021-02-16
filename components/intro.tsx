@@ -3,8 +3,8 @@ import styled from "styled-components";
 const DivContainer = styled.div`
   display: flex;
   flex-direction: row;
-  color: #ffffff;
-  background: #040a18;
+  color: ${props => props.theme.homeColorSecondPart};
+  background: ${props => props.theme.homeBgSecondPart};
   padding: 60px 60px 80px 60px;
 `;
 
@@ -35,8 +35,8 @@ const ContentDiv = styled.div`
 const Arrow = styled.span`
   width: 8px;
   height: 8px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-bottom: 3px solid ${props => props.theme.arrowColorSecondPart};
+  border-right: 3px solid ${props => props.theme.arrowColorSecondPart};
   transform: rotate(-45deg);
   cursor: pointer;
   align-item: center;

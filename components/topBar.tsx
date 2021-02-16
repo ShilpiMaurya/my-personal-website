@@ -6,6 +6,8 @@ const NavBar = styled.div`
   display: flex;
   flex-direction: row;
   padding: 50px;
+  background: ${props => props.theme.homeBgFirstPart};
+  color: ${props => props.theme.homeColorFirstPart};
 `;
 
 const NavItemsContainer = styled.div`
@@ -16,7 +18,6 @@ const NavItemsContainer = styled.div`
 `;
 
 const NavItems = styled.div`
-  color: white;
   margin-left: 30px;
   margin-right: 30px;
   cursor: pointer;
@@ -27,11 +28,12 @@ const NavItems = styled.div`
 `;
 
 const Logo = styled.div`
-  background: white;
-  color: #0f1727;
+  background: ${props => props.theme.logoBg};
+  color: ${props => props.theme.logoColor};
   font-size: 40px;
   margin-right: 20px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 const SwitchContainer = styled.div`
@@ -39,8 +41,7 @@ const SwitchContainer = styled.div`
   justify-content: center;
 `;
 
-const TopBar = () => {
-    
+const TopBar = ({ changeHandler }) => {
   return (
     <>
       <NavBar>
@@ -56,7 +57,7 @@ const TopBar = () => {
           <NavItems>CONTACT</NavItems>
         </NavItemsContainer>
         <SwitchContainer>
-          <Switch></Switch>
+          <Switch onChange={changeHandler} />
         </SwitchContainer>
       </NavBar>
     </>

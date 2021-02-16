@@ -4,8 +4,8 @@ import Image from "next/image";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  color: #ffffff;
-  background: #0f1727;
+  color: ${props => props.theme.homeColorThirdPart};
+  background: ${props => props.theme.homeBgThirdPart};
   padding: 50px 50px 60px 50px;
 `;
 

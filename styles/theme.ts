@@ -1,16 +1,17 @@
-export const lightTheme = {
+const light = {
   homeBgFirstPart: "#0e6677",
-  homeColorFirstPart: "#0f1727",
-  homeBgSecondPart: "#ffffff",
+  homeColorFirstPart: "#ffffff",
+  homeBgSecondPart: "#f5f5f5",
   homeColorSecondPart: "#0f1727",
-  homeBgThirdPart: "#D8D8D8",
+  homeBgThirdPart: "#ffffff",
   homeColorThirdPart: "#0f1727",
-  logoBg: "#0f1727",
+  logoBg: "#0e6677",
   logoColor: "#ffffff",
-  arrowColorFirstPart: "#0f1727",
+  arrowColorFirstPart: "#ffffff",
   arrowColorSecondPart: "#0f1727"
 };
-export const darkTheme = {
+
+const dark = {
   homeBgFirstPart: "#0f1727",
   homeColorFirstPart: "#ffffff",
   homeBgSecondPart: "#040a18",
@@ -23,9 +24,12 @@ export const darkTheme = {
   arrowColorSecondPart: "#ffffff"
 };
 
-export default {
+const defaultTheme = {
   space: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
   fontSizes: [15, 20, 25, 30, 35, 40, 45, 50, 55],
   fontWeights: [300, 400, 500, 600, 700, 800, 900],
   breakpoints: ["480px", "850px", "1024px", "1260px"]
 };
+
+export const lightTheme = { ...defaultTheme, ...light };
+export const darkTheme = { ...defaultTheme, ...dark };
