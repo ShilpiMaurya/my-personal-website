@@ -3,7 +3,7 @@ import styled from "styled-components";
 const DivContainer = styled.div`
   display: flex;
   flex-direction: row;
-  color: white;
+  color: #ffffff;
   background: #040a18;
   padding: 60px 60px 80px 60px;
 `;
@@ -28,6 +28,7 @@ const HeadingDiv = styled.div`
 const ContentDiv = styled.div`
   padding-top: 20px;
   font-size: 20px;
+  font-weight: 100;
   line-height: 1.6;
 `;
 
@@ -60,18 +61,6 @@ const Intro = () => {
         </Div>
         <Div>
           <HeadingContainer>
-            <HeadingDiv>MY PROJECTS</HeadingDiv>
-            <Arrow />
-          </HeadingContainer>
-          <ContentDiv>
-            I have been doing various types of projects from last one year to
-            enhance my skills as a front-end developer, i enjoy learning new
-            things and make a small project about it. I have also written few
-            blogs on medium. Here are a few...
-          </ContentDiv>
-        </Div>
-        <Div>
-          <HeadingContainer>
             <HeadingDiv>CONTACT ME</HeadingDiv>
             <Arrow />
           </HeadingContainer>
@@ -83,6 +72,18 @@ const Intro = () => {
             +91-9149235516
             <br />
             meshilpi94@gmail.com
+          </ContentDiv>
+        </Div>
+        <Div>
+          <HeadingContainer>
+            <HeadingDiv>MY PROJECTS</HeadingDiv>
+            <Arrow />
+          </HeadingContainer>
+          <ContentDiv>
+            I have been doing various types of projects from last one year to
+            enhance my skills as a front-end developer, i enjoy learning new
+            things and make a small project about it. I have also written few
+            blogs on medium. Here are a few...
           </ContentDiv>
         </Div>
       </DivContainer>

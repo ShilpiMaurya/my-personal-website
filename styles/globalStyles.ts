@@ -8,6 +8,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: CircularStd,Myriad Pro,Gill Sans,Gill Sans MT,Calibri,sans-serif;
 }
 a {
   color: inherit;

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  color: white;
+  color: #ffffff;
   background: #0f1727;
   padding: 50px 50px 60px 50px;
 `;
@@ -25,7 +25,7 @@ const LinksContent = styled.div`
 `;
 
 const ContactInfo = styled.div`
-  padding: 40px 50px 0px 0px;
+  padding: 30px 50px 0px 0px;
   font-size: 15px;
   text-align: right;
 `;

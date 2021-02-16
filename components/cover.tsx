@@ -1,56 +1,18 @@
 import styled, { keyframes } from "styled-components";
-import Switch from "@material-ui/core/Switch";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-import Link from "next/link";
+import TopBar from "../components/topBar";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   background: #0f1727;
-`;
-
-const NavBar = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-`;
-
-const NavItemsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-`;
-
-const NavItems = styled.div`
-  color: white;
-  margin-left: 30px;
-  margin-right: 30px;
-  cursor: pointer;
-  &:hover {
-    border-bottom: 1px solid;
-    transition: border-botttom 2s ease-in-out;
-  }
-`;
-
-const Logo = styled.div`
-  background: white;
-  color: #0f1727;
-  font-size: 40px;
-  margin-right: 20px;
-  cursor: pointer;
-`;
-
-const SwitchContainer = styled.div`
-  align-items: center;
-  justify-content: center;
+  color: #ffffff;
 `;
 
 const Intro = styled.div`
   display: flex;
   flex-direction: row;
-  color: white;
 `;
 
 const IntroText = styled.div`
@@ -58,11 +20,12 @@ const IntroText = styled.div`
   font-weight: 500;
   padding: 120px 0px 100px 100px;
   width: 100%;
-  text-align: left;
 `;
 
 const IntroPic = styled.div`
   margin-top: 40px;
+  position: relative;
+  top: 40px;
 `;
 
 const animate = keyframes`
@@ -72,7 +35,7 @@ const animate = keyframes`
 `;
 
 const ArrowContainer = styled.div`
-  padding-top: 30px;
+  padding-top: 10px;
 `;
 
 const Arrow = styled.span`
@@ -97,7 +60,7 @@ const subTextAnimate = keyframes`
 
 const SubText = styled.div`
   opacity: 0;
-  padding-top: 10px;
+  padding-top: 30px;
   font-size: 25px;
   animation: ${subTextAnimate} 4s infinite;
   animation-delay: 10s;
@@ -107,22 +70,7 @@ const CoverPage = () => {
   return (
     <>
       <Container>
-        <NavBar>
-          <Logo>SM</Logo>
-          <NavItemsContainer>
-            <NavItems>
-              <Link href="/">
-                <a>ABOUT ME</a>
-              </Link>
-            </NavItems>
-            <NavItems>MY SKILLS</NavItems>
-            <NavItems>PROJECTS</NavItems>
-            <NavItems>CONTACT</NavItems>
-          </NavItemsContainer>
-          <SwitchContainer>
-            <Switch></Switch>
-          </SwitchContainer>
-        </NavBar>
+        <TopBar />
         <Intro>
           <IntroText>
             <Typewriter
@@ -148,7 +96,7 @@ const CoverPage = () => {
               src="/Shilpi.png"
               alt="picture of Shilpi Maurya"
               layout="intrinsic"
-              width={800}
+              width={700}
               height={800}
               objectFit="cover"
               objectPosition="top"
