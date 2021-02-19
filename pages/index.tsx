@@ -9,6 +9,7 @@ const Container = styled.div`
 `;
 
 export default function Home() {
+  const changeHandler = () => {};
   return (
     <>
       <Container>

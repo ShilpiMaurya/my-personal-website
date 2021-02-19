@@ -32,6 +32,11 @@ const ContentDiv = styled.div`
   line-height: 1.6;
 `;
 
+const ContactInfo = styled.div`
+  cursor: pointer;
+  padding-top: 5px;
+`;
+
 const Arrow = styled.span`
   width: 8px;
   height: 8px;
@@ -68,10 +73,8 @@ const Intro = () => {
             I'll be very exicted to work in some awesome projects and happy to
             dicuss your development needs. If you think i can help you with your
             next project, do get in touch.
-            <br />
-            +91-9149235516
-            <br />
-            meshilpi94@gmail.com
+            <ContactInfo> +91-9149235516</ContactInfo>
+            <ContactInfo> meshilpi94@gmail.com</ContactInfo>
           </ContentDiv>
         </Div>
         <Div>

@@ -1,9 +1,9 @@
 const light = {
   homeBgFirstPart: "#0e6677",
   homeColorFirstPart: "#ffffff",
-  homeBgSecondPart: "#f5f5f5",
+  homeBgSecondPart: "#ffffff",
   homeColorSecondPart: "#0f1727",
-  homeBgThirdPart: "#ffffff",
+  homeBgThirdPart: "#f5f5f5",
   homeColorThirdPart: "#0f1727",
   logoBg: "#0e6677",
   logoColor: "#ffffff",
