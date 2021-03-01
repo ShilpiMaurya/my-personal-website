@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import CoverPage from "../components/cover";
 import styled from "styled-components";
 import Intro from "../components/intro";
@@ -9,14 +10,17 @@ const Container = styled.div`
 `;
 
 export default function Home() {
-  const changeHandler = () => {};
+  const refPoint = useRef(null);
+
+  const manageHandleClick = () => {
+    refPoint.current.scrollIntoView();
+  };
+
   return (
-    <>
-      <Container>
-        <CoverPage></CoverPage>
-        <Intro></Intro>
-        <Footer></Footer>
-      </Container>
-    </>
+    <Container>
+      <CoverPage handleClick={manageHandleClick}></CoverPage>
+      <Intro pageRef={refPoint}></Intro>
+      <Footer></Footer>
+    </Container>
   );
 }

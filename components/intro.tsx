@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const DivContainer = styled.div`
   display: flex;
@@ -48,49 +49,57 @@ const Arrow = styled.span`
   margin-top: 5px;
 `;
 
-const Intro = () => {
+const Intro = ({ pageRef }) => {
   return (
-    <>
-      <DivContainer>
-        <Div>
-          <HeadingContainer>
-            <HeadingDiv>ABOUT ME</HeadingDiv>
-            <Arrow />
-          </HeadingContainer>
-          <ContentDiv>
-            Im a self-taught front-end developer. Keenly interested in the
-            universe of front-end development and user experience. Want to
-            become a front-end web developer to learn, explore and provide great
-            user experience on web-based digital products and services.
-          </ContentDiv>
-        </Div>
-        <Div>
-          <HeadingContainer>
-            <HeadingDiv>CONTACT ME</HeadingDiv>
-            <Arrow />
-          </HeadingContainer>
-          <ContentDiv>
-            I'll be very exicted to work in some awesome projects and happy to
-            dicuss your development needs. If you think i can help you with your
-            next project, do get in touch.
-            <ContactInfo> +91-9149235516</ContactInfo>
-            <ContactInfo> meshilpi94@gmail.com</ContactInfo>
-          </ContentDiv>
-        </Div>
-        <Div>
-          <HeadingContainer>
-            <HeadingDiv>MY PROJECTS</HeadingDiv>
-            <Arrow />
-          </HeadingContainer>
-          <ContentDiv>
-            I have been doing various types of projects from last one year to
-            enhance my skills as a front-end developer, i enjoy learning new
-            things and make a small project about it. I have also written few
-            blogs on medium. Here are a few...
-          </ContentDiv>
-        </Div>
-      </DivContainer>
-    </>
+    <DivContainer ref={pageRef}>
+      <Div>
+        <HeadingContainer>
+          <HeadingDiv>ABOUT ME</HeadingDiv>
+          <Link href="/about">
+            <Arrow></Arrow>
+          </Link>
+        </HeadingContainer>
+        <ContentDiv>
+          Im a self-taught front-end developer. Keenly interested in the
+          universe of front-end development and user experience. Want to become
+          a front-end web developer to learn, explore and provide great user
+          experience on web-based digital products and services.
+        </ContentDiv>
+      </Div>
+      <Div>
+        <HeadingContainer>
+          <HeadingDiv>CONTACT ME</HeadingDiv>
+          <Link href="/contact">
+            <Arrow></Arrow>
+          </Link>
+        </HeadingContainer>
+        <ContentDiv>
+          I'll be very exicted to work in some awesome projects and happy to
+          dicuss your development needs. If you think i can help you with your
+          next project, do get in touch.
+          <ContactInfo>
+            <a href="tel:9149235516">+91-9149235516</a>
+          </ContactInfo>
+          <ContactInfo>
+            <a href="mailto:meshilpi94@gmail.com">meshilpi94@gmail.com</a>
+          </ContactInfo>
+        </ContentDiv>
+      </Div>
+      <Div>
+        <HeadingContainer>
+          <HeadingDiv>MY PROJECTS</HeadingDiv>
+          <Link href="/projects">
+            <Arrow></Arrow>
+          </Link>
+        </HeadingContainer>
+        <ContentDiv>
+          I have been doing various types of projects from last one year to
+          enhance my skills as a front-end developer, i enjoy learning new
+          things and make a small project about it. I have also written few
+          blogs on medium. Here are a few...
+        </ContentDiv>
+      </Div>
+    </DivContainer>
   );
 };
 

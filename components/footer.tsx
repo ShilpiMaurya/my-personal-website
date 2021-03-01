@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 const Container = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const Container = styled.div`
   padding: 50px 50px 60px 50px;
 `;
 
-const Links = styled.div`
+const LinksContainer = styled.div`
   padding: 20px 0px 0px 50px;
   font-size: 15px;
   width: 100%;
@@ -25,7 +26,7 @@ const LinksContent = styled.div`
 `;
 
 const ContactInfo = styled.div`
-  padding: 30px 50px 0px 0px;
+  padding: 60px 50px 0px 0px;
   font-size: 15px;
   text-align: right;
 `;
@@ -49,19 +50,47 @@ const SocioIconsItems = styled.div`
 
 const Footer = () => {
   return (
-    <>
-      <Container>
-        <Links>
-          <LinksContent>ABOUT ME</LinksContent>
-          <LinksContent>MY SKILLS</LinksContent>
-          <LinksContent>MY PROJECTS</LinksContent>
-          <LinksContent>CONTACT ME</LinksContent>
-        </Links>
-        <ContactInfo>
-          <ContactInfoContent>+91-9149235516</ContactInfoContent>
-          <ContactInfoContent>meshilpi94@gmail.com</ContactInfoContent>
-          <SocioIcons>
-            <SocioIconsItems>
+    <Container>
+      <LinksContainer>
+        <LinksContent>
+          <Link href="/about">
+            <a>ABOUT ME</a>
+          </Link>
+        </LinksContent>
+        <LinksContent>
+          <Link href="/skills">
+            <a>MY SKILLS</a>
+          </Link>
+        </LinksContent>
+        <LinksContent>
+          <Link href="/blogs">
+            <a>BLOGS</a>
+          </Link>
+        </LinksContent>
+        <LinksContent>
+          <Link href="/projects">
+            <a>PROJECTS</a>
+          </Link>
+        </LinksContent>
+        <LinksContent>
+          <Link href="/contact">
+            <a>CONTACT</a>
+          </Link>
+        </LinksContent>
+      </LinksContainer>
+      <ContactInfo>
+        <ContactInfoContent>
+          <a href="tel:9149235516">+91-9149235516</a>
+        </ContactInfoContent>
+        <ContactInfoContent>
+          <a href="mailto:meshilpi94@gmail.com">meshilpi94@gmail.com</a>
+        </ContactInfoContent>
+        <SocioIcons>
+          <SocioIconsItems>
+            <a
+              href="https://www.linkedin.com/in/shilpi-maurya-b6aa85129/"
+              target="_blank"
+            >
               <Image
                 src="/linkedin.png"
                 alt="linkedin logo"
@@ -69,8 +98,10 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-            </SocioIconsItems>
-            <SocioIconsItems>
+            </a>
+          </SocioIconsItems>
+          <SocioIconsItems>
+            <a href="https://medium.com/@meshilpi94" target="_blank">
               <Image
                 src="/medium.png"
                 alt="Medium logo"
@@ -78,8 +109,10 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-            </SocioIconsItems>
-            <SocioIconsItems>
+            </a>
+          </SocioIconsItems>
+          <SocioIconsItems>
+            <a href="https://github.com/ShilpiMaurya" target="_blank">
               <Image
                 src="/github.png"
                 alt="Github logo"
@@ -87,11 +120,11 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-            </SocioIconsItems>
-          </SocioIcons>
-        </ContactInfo>
-      </Container>
-    </>
+            </a>
+          </SocioIconsItems>
+        </SocioIcons>
+      </ContactInfo>
+    </Container>
   );
 };
 

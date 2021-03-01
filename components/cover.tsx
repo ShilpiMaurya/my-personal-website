@@ -68,46 +68,44 @@ const SubText = styled.div`
   animation-delay: 10s;
 `;
 
-const CoverPage = () => {
+const CoverPage = ({ handleClick }) => {
   return (
-    <>
-      <Container>
-        <Intro>
-          <IntroText>
-            <Typewriter
-              onInit={typewriter => {
-                typewriter
-                  .typeString("Shilpi Maurya")
-                  .deleteAll()
-                  .deleteChars(7)
-                  .typeString("<strong>Shilpi Maurya </strong>")
-                  .typeString("<br/>Front-end developer")
-                  .start();
-              }}
-            />
-            <Box fontSize={[2]}>
-              <SubText>Know more</SubText>
-            </Box>
-            <ArrowContainer>
-              <Arrow />
-              <Arrow />
-              <Arrow />
-            </ArrowContainer>
-          </IntroText>
-          <IntroPic>
-            <Image
-              src="/Shilpi.png"
-              alt="picture of Shilpi Maurya"
-              layout="intrinsic"
-              width={700}
-              height={800}
-              objectFit="cover"
-              objectPosition="top"
-            />
-          </IntroPic>
-        </Intro>
-      </Container>
-    </>
+    <Container>
+      <Intro>
+        <IntroText>
+          <Typewriter
+            onInit={typewriter => {
+              typewriter
+                .typeString("Shilpi Maurya")
+                .deleteAll()
+                .deleteChars(7)
+                .typeString("<strong>Shilpi Maurya </strong>")
+                .typeString("<br/>Front-end developer")
+                .start();
+            }}
+          />
+          <Box fontSize={[2]}>
+            <SubText>Know more</SubText>
+          </Box>
+          <ArrowContainer onClick={handleClick}>
+            <Arrow />
+            <Arrow />
+            <Arrow />
+          </ArrowContainer>
+        </IntroText>
+        <IntroPic>
+          <Image
+            src="/Shilpi.png"
+            alt="picture of Shilpi Maurya"
+            layout="intrinsic"
+            width={700}
+            height={800}
+            objectFit="cover"
+            objectPosition="top"
+          />
+        </IntroPic>
+      </Intro>
+    </Container>
   );
 };
 

@@ -43,24 +43,43 @@ const SwitchContainer = styled.div`
 
 const TopBar = ({ changeHandler }) => {
   return (
-    <>
-      <NavBar>
-        <Logo>SM</Logo>
-        <NavItemsContainer>
-          <NavItems>
-            <Link href="/">
-              <a>ABOUT ME</a>
-            </Link>
-          </NavItems>
-          <NavItems>MY SKILLS</NavItems>
-          <NavItems>PROJECTS</NavItems>
-          <NavItems>CONTACT</NavItems>
-        </NavItemsContainer>
-        <SwitchContainer>
-          <Switch onChange={changeHandler} />
-        </SwitchContainer>
-      </NavBar>
-    </>
+    <NavBar>
+      <Logo>
+        <Link href="/">
+          <a>SM</a>
+        </Link>
+      </Logo>
+      <NavItemsContainer>
+        <NavItems>
+          <Link href="/about">
+            <a>ABOUT ME</a>
+          </Link>
+        </NavItems>
+        <NavItems>
+          <Link href="/skills">
+            <a>MY SKILLS</a>
+          </Link>
+        </NavItems>
+        <NavItems>
+          <Link href="/blogs">
+            <a>BLOGS</a>
+          </Link>
+        </NavItems>
+        <NavItems>
+          <Link href="/projects">
+            <a>PROJECTS</a>
+          </Link>
+        </NavItems>
+        <NavItems>
+          <Link href="/contact">
+            <a>CONTACT</a>
+          </Link>
+        </NavItems>
+      </NavItemsContainer>
+      <SwitchContainer>
+        <Switch onChange={changeHandler} />
+      </SwitchContainer>
+    </NavBar>
   );
 };
 
