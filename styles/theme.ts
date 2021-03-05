@@ -8,7 +8,8 @@ const light = {
   logoBg: "#0e6677",
   logoColor: "#ffffff",
   arrowColorFirstPart: "#ffffff",
-  arrowColorSecondPart: "#0f1727"
+  arrowColorSecondPart: "#0f1727",
+  aboutPage: "#0e6677"
 };
 
 const dark = {
@@ -21,7 +22,8 @@ const dark = {
   logoBg: "#ffffff",
   logoColor: "#0f1727",
   arrowColorFirstPart: "#ffffff",
-  arrowColorSecondPart: "#ffffff"
+  arrowColorSecondPart: "#ffffff",
+  aboutPage: "#040a18"
 };
 
 const defaultTheme = {

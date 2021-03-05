@@ -15,6 +15,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+button {
+  border:none;
+}
 `;
 
 export default GlobalStyles;
