@@ -87,8 +87,8 @@ const Intro = ({ pageRef }) => {
       </Div>
       <Div>
         <HeadingContainer>
-          <HeadingDiv>MY PROJECTS</HeadingDiv>
-          <Link href="/projects">
+          <HeadingDiv>MY BLOGS</HeadingDiv>
+          <Link href="/blogs">
             <Arrow></Arrow>
           </Link>
         </HeadingContainer>

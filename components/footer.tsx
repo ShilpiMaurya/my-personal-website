@@ -26,7 +26,7 @@ const LinksContent = styled.div`
 `;
 
 const ContactInfo = styled.div`
-  padding: 60px 50px 0px 0px;
+  padding: 40px 50px 0px 0px;
   font-size: 15px;
   text-align: right;
 `;
@@ -54,12 +54,7 @@ const Footer = () => {
       <LinksContainer>
         <LinksContent>
           <Link href="/about">
-            <a>ABOUT ME</a>
-          </Link>
-        </LinksContent>
-        <LinksContent>
-          <Link href="/skills">
-            <a>MY SKILLS</a>
+            <a>INTRO</a>
           </Link>
         </LinksContent>
         <LinksContent>
@@ -68,13 +63,13 @@ const Footer = () => {
           </Link>
         </LinksContent>
         <LinksContent>
-          <Link href="/projects">
-            <a>PROJECTS</a>
+          <Link href="/contact">
+            <a>CONTACT</a>
           </Link>
         </LinksContent>
         <LinksContent>
           <Link href="/contact">
-            <a>CONTACT</a>
+            <a> RESUME</a>
           </Link>
         </LinksContent>
       </LinksContainer>

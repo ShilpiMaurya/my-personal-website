@@ -52,22 +52,12 @@ const TopBar = ({ changeHandler }) => {
       <NavItemsContainer>
         <NavItems>
           <Link href="/about">
-            <a>ABOUT ME</a>
-          </Link>
-        </NavItems>
-        <NavItems>
-          <Link href="/skills">
-            <a>MY SKILLS</a>
+            <a>INTRO</a>
           </Link>
         </NavItems>
         <NavItems>
           <Link href="/blogs">
             <a>BLOGS</a>
-          </Link>
-        </NavItems>
-        <NavItems>
-          <Link href="/projects">
-            <a>PROJECTS</a>
           </Link>
         </NavItems>
         <NavItems>

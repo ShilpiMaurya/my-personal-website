@@ -28,6 +28,12 @@ const Card = styled.div`
   margin-right: 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transform: scale(1);
+  transition: 0.7s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+  }
 `;
 
 const CardName = styled.div`
@@ -68,12 +74,13 @@ const BlogsPage = () => {
           <CardName>
             <a
               href="https://medium.com/front-end-weekly/comparing-various-types-of-react-based-web-apps-and-how-to-analyze-their-performance-d23766e085f4"
-              target="_blank"
+              target="myFrame"
             >
               READ MORE...
             </a>
           </CardName>
         </Card>
+
         <Card>
           <Date>April 16, 2020</Date>
           <Publisher>Frontend Weekly (medium)</Publisher>
@@ -93,6 +100,7 @@ const BlogsPage = () => {
             </a>
           </CardName>
         </Card>
+
         <Card>
           <Date>October 12, 2019</Date>
           <Publisher>Quick Code (medium)</Publisher>
