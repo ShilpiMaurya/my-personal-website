@@ -52,7 +52,7 @@ const TopBar = ({ changeHandler }) => {
       <NavItemsContainer>
         <NavItems>
           <Link href="/about">
-            <a>INTRO</a>
+            <a>ABOUT</a>
           </Link>
         </NavItems>
         <NavItems>

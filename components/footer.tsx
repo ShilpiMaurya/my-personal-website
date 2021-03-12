@@ -54,7 +54,7 @@ const Footer = () => {
       <LinksContainer>
         <LinksContent>
           <Link href="/about">
-            <a>INTRO</a>
+            <a>ABOUT</a>
           </Link>
         </LinksContent>
         <LinksContent>

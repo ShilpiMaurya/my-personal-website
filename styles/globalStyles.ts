@@ -18,6 +18,10 @@ a {
 button {
   border:none;
 }
+hr {
+  color: #f5f5f5;
+  margin: 0px;
+}
 `;
 
 export default GlobalStyles;
