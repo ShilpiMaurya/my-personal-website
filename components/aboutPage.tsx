@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: row;
   background: ${props => props.theme.aboutPage};
   color: ${props => props.theme.homeColorFirstPart};
-  padding: 50px 50px 100px 50px;
+  padding: 30px 50px 100px 50px;
 `;
 
 const Title = styled.div`
