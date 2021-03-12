@@ -50,7 +50,6 @@ const Header = styled.div`
 
 const Topic = styled.div`
   color: white;
-  font-family: cursive;
   font-size: 25px;
   padding: 10px;
 `;
@@ -203,7 +202,7 @@ const AboutPage = () => {
                 width={50}
                 height={50}
               />
-              <Topic>SHILPI MAURYA</Topic>
+              <Topic>SHILPI_MAURYA</Topic>
             </Header>
             <DotContainer>
               <Dot />

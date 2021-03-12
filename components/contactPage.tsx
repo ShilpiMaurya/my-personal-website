@@ -61,9 +61,8 @@ const Logo = styled.div`
 const LogoText = styled.div`
   text-align: center;
   font-size: 25px;
-  font-weight: 900;
+  font-weight: 500;
   padding-top: 10px;
-  font-family: cursive;
 `;
 
 const Content = styled.div`
