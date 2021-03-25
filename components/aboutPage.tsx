@@ -126,8 +126,10 @@ const InstaID = styled.div`
 `;
 
 const InstaComment = styled.div`
-  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 10px;
   font-weight: 300;
+  text-decoration: underline;
+  cursor: pointer;
 `;
 
 const InstaCommentWrap = styled.div`

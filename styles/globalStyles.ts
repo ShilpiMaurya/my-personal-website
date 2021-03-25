@@ -14,9 +14,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  
 }
 button {
-  border:none;
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin: 0px;
 }
 hr {
   color: #f5f5f5;

@@ -7,21 +7,29 @@ const Title = styled.div`
   background: ${props => props.theme.aboutPage};
   color: ${props => props.theme.homeColorFirstPart};
   padding: 20px 0px 60px 60px;
+  @media (max-width: 850px) {
+    font-size: 50px;
+  }
 `;
 
 const Container = styled.div`
-  padding: 50px 20px 150px 20px;
+  padding: 50px 0px 150px 20px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: ${props => props.theme.contactPageBg};
 `;
 
 const UnderDiv = styled.div`
   position: relative;
-  background: #0e6677;
+  background: ${props => props.theme.contactPageCard};
   height: 400px;
   width: 800px;
+  @media (max-width: 970px) {
+    height: 400px;
+    width: 600px;
+  }
 `;
 
 const OverDiv = styled.div`
@@ -42,11 +50,21 @@ const OverDiv = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  @media (max-width: 970px) {
+    height: 400px;
+    width: 600px;
+  }
 `;
 
 const LogoDisplay = styled.div`
   padding: 0px 100px 0px 80px;
   width: 100%;
+  @media (max-width: 970px) {
+    padding: 0px 10px 0px 80px;
+  }
+  @media (max-width: 800px) {
+    padding: 0px 10px 0px 20px;
+  }
 `;
 
 const Logo = styled.div`
@@ -57,23 +75,39 @@ const Logo = styled.div`
   text-align: center;
   margin-left: 60px;
   margin-right: 60px;
+  @media (max-width: 970px) {
+    font-size: 60px;
+  }
+  @media (max-width: 800px) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 `;
 const LogoText = styled.div`
   text-align: center;
   font-size: 25px;
   font-weight: 500;
   padding-top: 10px;
+  @media (max-width: 970px) {
+    font-size: 20px;
+  }
 `;
 
 const Content = styled.div`
   padding: 0px 80px 0px 0px;
   width: 100%;
   justify-content: center;
+  @media (max-width: 800px) {
+    padding: 0px 20px 0px 0px;
+  }
 `;
 
 const ContactInfo = styled.div`
   font-size: 30px;
   text-align: center;
+  @media (max-width: 970px) {
+    font-size: 20px;
+  }
 `;
 
 const ContactInfoContent = styled.div`
@@ -86,6 +120,7 @@ const SocioIcons = styled.div`
   flex-direction: row;
   justify-content: center;
   padding-top: 20px;
+  align-items: center;
 `;
 
 const SocioIconsItems = styled.div`
@@ -120,33 +155,33 @@ const ContactPage = () => {
                       target="_blank"
                     >
                       <Image
-                        src="/linkedin.png"
+                        src="/linkedin2.jpeg"
                         alt="linkedin logo"
                         layout="fixed"
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                       />
                     </a>
                   </SocioIconsItems>
                   <SocioIconsItems>
                     <a href="https://medium.com/@meshilpi94" target="_blank">
                       <Image
-                        src="/medium.png"
+                        src="/medium2.png"
                         alt="Medium logo"
                         layout="fixed"
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                       />
                     </a>
                   </SocioIconsItems>
                   <SocioIconsItems>
                     <a href="https://github.com/ShilpiMaurya" target="_blank">
                       <Image
-                        src="/github.png"
+                        src="/github2.png"
                         alt="Github logo"
                         layout="fixed"
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                       />
                     </a>
                   </SocioIconsItems>

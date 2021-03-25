@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Switch from "@material-ui/core/Switch";
 import Link from "next/link";
+import Box from "../components/Box";
 
 const NavBar = styled.div`
   display: flex;
@@ -8,6 +9,12 @@ const NavBar = styled.div`
   padding: 50px;
   background: ${props => props.theme.homeBgFirstPart};
   color: ${props => props.theme.homeColorFirstPart};
+  @media (max-width: 500px) {
+    padding: 30px;
+  }
+  @media (max-width: 400px) {
+    padding: 10px;
+  }
 `;
 
 const NavItemsContainer = styled.div`
@@ -18,8 +25,6 @@ const NavItemsContainer = styled.div`
 `;
 
 const NavItems = styled.div`
-  margin-left: 30px;
-  margin-right: 30px;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -31,45 +36,53 @@ const Logo = styled.div`
   background: ${props => props.theme.logoBg};
   color: ${props => props.theme.logoColor};
   font-size: 40px;
-  margin-right: 20px;
+  margin-right: 10px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  @media (max-width: 500px) {
+    margin-right: 10px;
+  }
+  @media (max-width: 400px) {
+    margin-right: 0px;
+  }
 `;
 
 const SwitchContainer = styled.div`
   align-items: center;
   justify-content: center;
+  @media (max-width: 400px) {
+    margin-top: 5px;
+  }
 `;
 
 const TopBar = ({ changeHandler }) => {
   return (
-    <NavBar>
-      <Logo>
-        <Link href="/">
-          <a>SM</a>
-        </Link>
-      </Logo>
-      <NavItemsContainer>
-        <NavItems>
-          <Link href="/about">
-            <a>ABOUT</a>
+    <Box>
+      <NavBar>
+        <Logo>
+          <Link href="/">
+            <a>SM</a>
           </Link>
-        </NavItems>
-        <NavItems>
-          <Link href="/blogs">
-            <a>BLOGS</a>
-          </Link>
-        </NavItems>
-        <NavItems>
-          <Link href="/contact">
-            <a>CONTACT</a>
-          </Link>
-        </NavItems>
-      </NavItemsContainer>
-      <SwitchContainer>
-        <Switch onChange={changeHandler} />
-      </SwitchContainer>
-    </NavBar>
+        </Logo>
+        <NavItemsContainer>
+          <Box mr={[2, 2, 3, 4]} ml={[2, 2, 3, 4]}>
+            <NavItems>
+              <Link href="/blogs">
+                <a>BLOGS</a>
+              </Link>
+            </NavItems>
+          </Box>
+          <NavItems>
+            <Link href="/contact">
+              <a>CONTACT</a>
+            </Link>
+          </NavItems>
+        </NavItemsContainer>
+        <SwitchContainer>
+          <Switch onChange={changeHandler} />
+        </SwitchContainer>
+      </NavBar>
+    </Box>
   );
 };
 

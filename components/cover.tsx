@@ -20,15 +20,36 @@ const IntroText = styled.div`
   font-weight: 500;
   padding: 120px 0px 100px 100px;
   width: 100%;
+  @media (max-width: 1090px) {
+    padding: 120px 0px 100px 50px;
+  }
+  @media (max-width: 1055px) {
+    font-size: 60px;
+  }
+  @media (max-width: 950px) {
+    font-size: 40px;
+  }
+  @media (max-width: 690px) {
+    padding: 80px 0px 100px 50px;
+  }
 `;
 
 const IntroPic = styled.div`
+  background: white;
   margin-top: 40px;
   position: relative;
   top: 40px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  @media (max-width: 730px) {
+    width: 600px;
+    height: 300px;
+  }
+  @media (max-width: 555px) {
+    width: 0px;
+    height: 0px;
+  }
 `;
 
 const animate = keyframes`
@@ -84,7 +105,7 @@ const CoverPage = ({ handleClick }) => {
                 .start();
             }}
           />
-          <Box fontSize={[2]}>
+          <Box fontSize={[1, 1, 2, 2]}>
             <SubText>Know more</SubText>
           </Box>
           <ArrowContainer onClick={handleClick}>

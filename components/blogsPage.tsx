@@ -18,14 +18,14 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   padding: 80px 60px 80px 60px;
+  background: ${props => props.theme.blogsPageBg};
 `;
 
 const Card = styled.div`
   display: flex;
   flex-direction: column;
   padding: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
+  background: white;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transform: scale(1);
@@ -34,6 +34,11 @@ const Card = styled.div`
     transform: scale(1.03);
     transition: 0.5s ease-in-out;
   }
+`;
+
+const CardBox = styled.div`
+  padding-right: 20px;
+  padding-left: 20px;
 `;
 
 const CardName = styled.div`
@@ -61,65 +66,71 @@ const BlogsPage = () => {
     <Container>
       <Title>BLOGS</Title>
       <CardContainer>
-        <Card>
-          <Date>May 27, 2020</Date>
-          <Publisher>Frontend Weekly (medium)</Publisher>
-          <Image
-            src="/medium-story-1.png"
-            alt="medium story max"
-            layout="intrinsic"
-            width={300}
-            height={300}
-          />
-          <CardName>
-            <a
-              href="https://medium.com/front-end-weekly/comparing-various-types-of-react-based-web-apps-and-how-to-analyze-their-performance-d23766e085f4"
-              target="myFrame"
-            >
-              READ MORE...
-            </a>
-          </CardName>
-        </Card>
+        <CardBox>
+          <Card>
+            <Date>May 27, 2020</Date>
+            <Publisher>Frontend Weekly (medium)</Publisher>
+            <Image
+              src="/medium-story-1.png"
+              alt="medium story max"
+              layout="intrinsic"
+              width={300}
+              height={300}
+            />
+            <CardName>
+              <a
+                href="https://medium.com/front-end-weekly/comparing-various-types-of-react-based-web-apps-and-how-to-analyze-their-performance-d23766e085f4"
+                target="myFrame"
+              >
+                READ MORE...
+              </a>
+            </CardName>
+          </Card>
+        </CardBox>
 
-        <Card>
-          <Date>April 16, 2020</Date>
-          <Publisher>Frontend Weekly (medium)</Publisher>
-          <Image
-            src="/medium-story-2.png"
-            alt="medium story max"
-            layout="intrinsic"
-            width={300}
-            height={300}
-          />
-          <CardName>
-            <a
-              href="https://medium.com/front-end-weekly/ci-cd-with-github-actions-to-deploy-on-github-pages-73e225f8f131"
-              target="_blank"
-            >
-              READ MORE...
-            </a>
-          </CardName>
-        </Card>
+        <CardBox>
+          <Card>
+            <Date>April 16, 2020</Date>
+            <Publisher>Frontend Weekly (medium)</Publisher>
+            <Image
+              src="/medium-story-2.png"
+              alt="medium story max"
+              layout="intrinsic"
+              width={300}
+              height={300}
+            />
+            <CardName>
+              <a
+                href="https://medium.com/front-end-weekly/ci-cd-with-github-actions-to-deploy-on-github-pages-73e225f8f131"
+                target="_blank"
+              >
+                READ MORE...
+              </a>
+            </CardName>
+          </Card>
+        </CardBox>
 
-        <Card>
-          <Date>October 12, 2019</Date>
-          <Publisher>Quick Code (medium)</Publisher>
-          <Image
-            src="/medium-story-3.png"
-            alt="medium story max"
-            layout="intrinsic"
-            width={300}
-            height={300}
-          />
-          <CardName>
-            <a
-              href="https://medium.com/quick-code/useful-git-commands-a0d410c835f8"
-              target="_blank"
-            >
-              READ MORE...
-            </a>
-          </CardName>
-        </Card>
+        <CardBox>
+          <Card>
+            <Date>October 12, 2019</Date>
+            <Publisher>Quick Code (medium)</Publisher>
+            <Image
+              src="/medium-story-3.png"
+              alt="medium story max"
+              layout="intrinsic"
+              width={300}
+              height={300}
+            />
+            <CardName>
+              <a
+                href="https://medium.com/quick-code/useful-git-commands-a0d410c835f8"
+                target="_blank"
+              >
+                READ MORE...
+              </a>
+            </CardName>
+          </Card>
+        </CardBox>
       </CardContainer>
     </Container>
   );

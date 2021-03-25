@@ -1,18 +1,24 @@
 import styled from "styled-components";
-import Link from "next/link";
 
 const DivContainer = styled.div`
   display: flex;
   flex-direction: row;
   color: ${props => props.theme.homeColorSecondPart};
   background: ${props => props.theme.homeBgSecondPart};
-  padding: 60px 60px 80px 60px;
+  padding: 60px;
+  @media (max-width: 700px) {
+    padding: 20px;
+  }
+  @media (max-width: 400px) {
+    padding: 10px;
+  }
 `;
 
 const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
+  padding: 20px;
+  @media (max-width: 700px) {
+    padding: 10px;
+  }
 `;
 
 const HeadingContainer = styled.div`
@@ -21,32 +27,71 @@ const HeadingContainer = styled.div`
 `;
 
 const HeadingDiv = styled.div`
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 35px;
+  font-weight: 500;
   padding-right: 15px;
+  @media (max-width: 950px) {
+    font-size: 25px;
+  }
 `;
 
 const ContentDiv = styled.div`
-  padding-top: 20px;
-  font-size: 20px;
-  font-weight: 100;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 250;
   line-height: 1.6;
+  @media (max-width: 950px) {
+    font-size: 20px;
+  }
 `;
 
-const ContactInfo = styled.div`
-  cursor: pointer;
-  padding-top: 5px;
+const MoreContentDiv = styled.div`
+  padding-top: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 1.6;
+  @media (max-width: 950px) {
+    font-size: 18px;
+  }
 `;
 
 const Arrow = styled.span`
+  margin-left: 20px;
+  display: inline-block;
   width: 8px;
   height: 8px;
-  border-bottom: 3px solid ${props => props.theme.arrowColorSecondPart};
-  border-right: 3px solid ${props => props.theme.arrowColorSecondPart};
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
   transform: rotate(-45deg);
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 0px 0px;
+`;
+
+const ButtonLayout = styled.div`
+  padding-bottom: 20px;
+`;
+const ButtonDesign = styled.button`
+  padding: 10px 15px 10px 15px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 2px,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1.5px;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: white;
+  text-align: center;
+  align-items: center;
   cursor: pointer;
-  align-item: center;
-  margin-top: 5px;
+  &:hover {
+    background: ${props => props.theme.buttonBg};
+    transition: background 0.5s ease-in-out;
+  }
+  @media (max-width: 950px) {
+    font-size: 12px;
+  }
 `;
 
 const Intro = ({ pageRef }) => {
@@ -55,18 +100,42 @@ const Intro = ({ pageRef }) => {
       <Div>
         <HeadingContainer>
           <HeadingDiv>ABOUT ME</HeadingDiv>
-          <Link href="/about">
-            <Arrow></Arrow>
-          </Link>
         </HeadingContainer>
         <ContentDiv>
-          Im a self-taught front-end developer. Keenly interested in the
-          universe of front-end development and user experience. Want to become
-          a front-end web developer to learn, explore and provide great user
-          experience on web-based digital products and services.
+          I'm a freelance front-end developer. Keenly interested in the universe
+          of front-end development and user experience.
         </ContentDiv>
+        <MoreContentDiv>
+          Started self-taught developer's journey about two years ago, used
+          various online platforms like codecademy, udemy to learn the basics of
+          HTML, CSS and JS, after that learnt about different libaries and
+          frameworks like React, styled-components, styled-system, framer-motion
+          etc simultaenously working on different projects and blogs.
+        </MoreContentDiv>
+        <MoreContentDiv>
+          Want to become a front-end web developer to learn, explore and provide
+          great user experience on web-based digital products and services.
+        </MoreContentDiv>
+        <ButtonContainer>
+          <ButtonLayout>
+            <a href="" target="_blank">
+              <ButtonDesign>
+                MY RESUME
+                <Arrow />
+              </ButtonDesign>
+            </a>
+          </ButtonLayout>
+          <ButtonLayout>
+            <a href="https://github.com/ShilpiMaurya" target="_blank">
+              <ButtonDesign>
+                MY PROJECTS
+                <Arrow />
+              </ButtonDesign>
+            </a>
+          </ButtonLayout>
+        </ButtonContainer>
       </Div>
-      <Div>
+      {/* <Div>
         <HeadingContainer>
           <HeadingDiv>CONTACT ME</HeadingDiv>
           <Link href="/contact">
@@ -84,8 +153,8 @@ const Intro = ({ pageRef }) => {
             <a href="mailto:meshilpi94@gmail.com">meshilpi94@gmail.com</a>
           </ContactInfo>
         </ContentDiv>
-      </Div>
-      <Div>
+      </Div> */}
+      {/* <Div>
         <HeadingContainer>
           <HeadingDiv>MY BLOGS</HeadingDiv>
           <Link href="/blogs">
@@ -98,7 +167,7 @@ const Intro = ({ pageRef }) => {
           things and make a small project about it. I have also written few
           blogs on medium. Here are a few...
         </ContentDiv>
-      </Div>
+      </Div> */}
     </DivContainer>
   );
 };

@@ -8,12 +8,33 @@ const Container = styled.div`
   color: ${props => props.theme.homeColorThirdPart};
   background: ${props => props.theme.homeBgThirdPart};
   padding: 50px 50px 60px 50px;
+  @media (max-width: 700px) {
+    padding: 30px 30px 40px 30px;
+  }
+  @media (max-width: 700px) {
+    padding: 30px 10px 40px 10px;
+  }
+  @media (max-width: 450px) {
+    padding: 10px 5px 20px 5px;
+  }
+  @media (max-width: 420px) {
+    padding: 10px 0px 20px 0px;
+  }
 `;
 
 const LinksContainer = styled.div`
-  padding: 20px 0px 0px 50px;
+  padding: 40px 0px 0px 50px;
   font-size: 15px;
   width: 100%;
+  @media (max-width: 700px) {
+    padding: 30px 0px 0px 40px;
+  }
+  @media (max-width: 400px) {
+    padding: 20px 0px 0px 30px;
+  }
+  @media (max-width: 380px) {
+    padding: 20px 0px 0px 10px;
+  }
 `;
 
 const LinksContent = styled.div`
@@ -29,6 +50,15 @@ const ContactInfo = styled.div`
   padding: 40px 50px 0px 0px;
   font-size: 15px;
   text-align: right;
+  @media (max-width: 700px) {
+    padding: 30px 40px 0px 0px;
+  }
+  @media (max-width: 400px) {
+    padding: 20px 30px 0px 0px;
+  }
+  @media (max-width: 380px) {
+    padding: 20px 20px 0px 0px;
+  }
 `;
 
 const ContactInfoContent = styled.div`
@@ -52,11 +82,11 @@ const Footer = () => {
   return (
     <Container>
       <LinksContainer>
-        <LinksContent>
+        {/* <LinksContent>
           <Link href="/about">
             <a>ABOUT</a>
           </Link>
-        </LinksContent>
+        </LinksContent> */}
         <LinksContent>
           <Link href="/blogs">
             <a>BLOGS</a>

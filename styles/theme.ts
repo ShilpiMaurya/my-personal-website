@@ -9,7 +9,11 @@ const light = {
   logoColor: "#ffffff",
   arrowColorFirstPart: "#ffffff",
   arrowColorSecondPart: "#0f1727",
-  aboutPage: "#0e6677"
+  buttonBg: "#f5f5f5",
+  aboutPage: "#0e6677",
+  blogsPageBg: "#ffffff",
+  contactPageBg: "#ffffff",
+  contactPageCard: "#0e6677"
 };
 
 const dark = {
@@ -23,7 +27,11 @@ const dark = {
   logoColor: "#0f1727",
   arrowColorFirstPart: "#ffffff",
   arrowColorSecondPart: "#ffffff",
-  aboutPage: "#040a18"
+  buttonBg: "#D8D8D8",
+  aboutPage: "#0f1727",
+  blogsPageBg: "#f5f5f5",
+  contactPageBg: "#D8D8D8",
+  contactPageCard: "#040a18"
 };
 
 const defaultTheme = {
