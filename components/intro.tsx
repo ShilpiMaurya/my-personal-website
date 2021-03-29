@@ -106,14 +106,18 @@ const Intro = ({ pageRef }) => {
           of front-end development and user experience.
         </ContentDiv>
         <MoreContentDiv>
-          Started self-taught developer's journey about two years ago, used
+          {/* Started self-taught developer's journey about two years ago, used
           various online platforms like codecademy, udemy to learn the basics of
           HTML, CSS and JS, after that learnt about different libaries and
           frameworks like React, styled-components, styled-system, framer-motion
-          etc simultaenously working on different projects and blogs.
+          etc simultaenously working on different projects and blogs. */}
+          Started self-taught developer's journey about two years ago, used
+          various online platforms like codecademy, udemy to learn about the
+          basics of web-development simultaenously working on different projects
+          and blogs.
         </MoreContentDiv>
         <MoreContentDiv>
-          Want to become a front-end web developer to learn, explore and provide
+          As a front-end web developer, wanted to learn, explore and provide
           great user experience on web-based digital products and services.
         </MoreContentDiv>
         <ButtonContainer>

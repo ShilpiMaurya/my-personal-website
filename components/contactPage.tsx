@@ -10,6 +10,16 @@ const Title = styled.div`
   @media (max-width: 850px) {
     font-size: 50px;
   }
+  @media (max-width: 550px) {
+    padding: 20px 0px 40px 40px;
+  }
+  @media (max-width: 450px) {
+    padding: 20px 0px 40px 30px;
+    font-size: 40px;
+  }
+  @media (max-width: 400px) {
+    padding: 20px 0px 40px 10px;
+  }
 `;
 
 const Container = styled.div`
@@ -19,6 +29,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background: ${props => props.theme.contactPageBg};
+  @media (max-width: 800px) {
+    padding: 50px 0px 150px 0px;
+  }
 `;
 
 const UnderDiv = styled.div`
@@ -29,6 +42,22 @@ const UnderDiv = styled.div`
   @media (max-width: 970px) {
     height: 400px;
     width: 600px;
+  }
+  @media (max-width: 750px) {
+    height: 400px;
+    width: 500px;
+  }
+  @media (max-width: 650px) {
+    height: 400px;
+    width: 300px;
+  }
+  @media (max-width: 450px) {
+    height: 400px;
+    width: 200px;
+  }
+  @media (max-width: 360px) {
+    height: 400px;
+    width: 180px;
   }
 `;
 
@@ -46,6 +75,7 @@ const OverDiv = styled.div`
     transform: scale(1.05);
     transition: 0.5s ease-in-out;
   }
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,6 +83,27 @@ const OverDiv = styled.div`
   @media (max-width: 970px) {
     height: 400px;
     width: 600px;
+  }
+  @media (max-width: 750px) {
+    height: 400px;
+    width: 500px;
+  }
+  @media (max-width: 650px) {
+    height: 400px;
+    width: 300px;
+    flex-direction: column;
+  }
+  @media (max-width: 450px) {
+    height: 400px;
+    width: 200px;
+  }
+  @media (max-width: 360px) {
+    height: 400px;
+    width: 180px;
+    &:hover {
+      transform: scale(1.02);
+      transition: 0.5s ease-in-out;
+    }
   }
 `;
 
@@ -82,6 +133,14 @@ const Logo = styled.div`
     margin-left: 60px;
     margin-right: 60px;
   }
+  @media (max-width: 650px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media (max-width: 450px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 const LogoText = styled.div`
   text-align: center;
@@ -89,6 +148,12 @@ const LogoText = styled.div`
   font-weight: 500;
   padding-top: 10px;
   @media (max-width: 970px) {
+    font-size: 20px;
+  }
+  @media (max-width: 650px) {
+    padding-bottom: 30px;
+  }
+  @media (max-width: 450px) {
     font-size: 20px;
   }
 `;
@@ -108,11 +173,17 @@ const ContactInfo = styled.div`
   @media (max-width: 970px) {
     font-size: 20px;
   }
+  @media (max-width: 360px) {
+    font-size: 15px;
+  }
 `;
 
 const ContactInfoContent = styled.div`
   cursor: pointer;
   padding: 5px;
+  @media (max-width: 450px) {
+    padding-left: 15px;
+  }
 `;
 
 const SocioIcons = styled.div`
@@ -127,6 +198,10 @@ const SocioIconsItems = styled.div`
   cursor: pointer;
   margin-right: 15px;
   margin-left: 15px;
+  @media (max-width: 450px) {
+    margin-right: 7px;
+    margin-left: 7px;
+  }
 `;
 
 const ContactPage = () => {
