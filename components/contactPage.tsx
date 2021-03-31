@@ -83,10 +83,14 @@ const OverDiv = styled.div`
   @media (max-width: 970px) {
     height: 400px;
     width: 600px;
+    top: 45px;
+    left: 45px;
   }
   @media (max-width: 750px) {
     height: 400px;
     width: 500px;
+    top: 40px;
+    left: 40px;
   }
   @media (max-width: 650px) {
     height: 400px;
@@ -100,10 +104,8 @@ const OverDiv = styled.div`
   @media (max-width: 360px) {
     height: 400px;
     width: 180px;
-    &:hover {
-      transform: scale(1.02);
-      transition: 0.5s ease-in-out;
-    }
+    top: 30px;
+    left: 30px;
   }
 `;
 

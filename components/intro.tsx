@@ -35,16 +35,16 @@ const HeadingDiv = styled.div`
   }
 `;
 
-const ContentDiv = styled.div`
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 25px;
-  font-weight: 250;
-  line-height: 1.6;
-  @media (max-width: 950px) {
-    font-size: 20px;
-  }
-`;
+// const ContentDiv = styled.div`
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+//   font-size: 25px;
+//   font-weight: 250;
+//   line-height: 1.6;
+//   @media (max-width: 950px) {
+//     font-size: 20px;
+//   }
+// `;
 
 const MoreContentDiv = styled.div`
   padding-top: 10px;
@@ -101,24 +101,23 @@ const Intro = ({ pageRef }) => {
         <HeadingContainer>
           <HeadingDiv>ABOUT ME</HeadingDiv>
         </HeadingContainer>
-        <ContentDiv>
-          I'm a freelance front-end developer. Keenly interested in the universe
-          of front-end development and user experience.
-        </ContentDiv>
         <MoreContentDiv>
           {/* Started self-taught developer's journey about two years ago, used
           various online platforms like codecademy, udemy to learn the basics of
           HTML, CSS and JS, after that learnt about different libaries and
           frameworks like React, styled-components, styled-system, framer-motion
           etc simultaenously working on different projects and blogs. */}
-          Started self-taught developer's journey about two years ago, used
+          {/* Started self-taught developer's journey about two years ago, used
           various online platforms like codecademy, udemy to learn about the
           basics of web-development simultaenously working on different projects
-          and blogs.
+          and blogs. */}
+          I'm a freelance front-end developer. Keenly interested in the universe
+          of front-end development and user experience, wanted to learn, explore
+          and provide great user experience.
         </MoreContentDiv>
         <MoreContentDiv>
-          As a front-end web developer, wanted to learn, explore and provide
-          great user experience on web-based digital products and services.
+          My main competence, working as a freelance front-end developer is in
+          react, typescript, nextjs, styled-components, styled-system.
         </MoreContentDiv>
         <ButtonContainer>
           <ButtonLayout>
