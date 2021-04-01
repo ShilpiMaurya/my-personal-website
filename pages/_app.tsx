@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "../styles/globalStyles";
 import TopBar from "../components/topBar";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState("light");
@@ -13,6 +14,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>Shilpi Maurya</title>
+      </Head>
       <GlobalStyles />
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <TopBar changeHandler={themeToggler}></TopBar>

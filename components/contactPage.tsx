@@ -123,11 +123,11 @@ const LogoDisplay = styled.div`
 const Logo = styled.div`
   background: ${props => props.theme.logoBg};
   color: ${props => props.theme.logoColor};
-  font-size: 80px;
+  font-size: 70px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 70px;
+  margin-right: 70px;
   @media (max-width: 970px) {
     font-size: 60px;
   }
@@ -136,8 +136,8 @@ const Logo = styled.div`
     margin-right: 60px;
   }
   @media (max-width: 650px) {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   @media (max-width: 450px) {
     margin-left: 50px;
@@ -156,7 +156,7 @@ const LogoText = styled.div`
     padding-bottom: 30px;
   }
   @media (max-width: 450px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
@@ -174,6 +174,9 @@ const ContactInfo = styled.div`
   text-align: center;
   @media (max-width: 970px) {
     font-size: 20px;
+  }
+  @media (max-width: 450px) {
+    font-size: 17px;
   }
   @media (max-width: 360px) {
     font-size: 15px;
