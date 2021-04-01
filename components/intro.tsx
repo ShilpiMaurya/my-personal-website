@@ -111,13 +111,12 @@ const Intro = ({ pageRef }) => {
           various online platforms like codecademy, udemy to learn about the
           basics of web-development simultaenously working on different projects
           and blogs. */}
-          I'm a freelance front-end developer. Keenly interested in the universe
-          of front-end development and user experience, wanted to learn, explore
-          and provide great user experience.
+          I'm a freelance front-end developer, interested in exploring and
+          providing great user experience on web.
         </MoreContentDiv>
         <MoreContentDiv>
-          My main competence, working as a freelance front-end developer is in
-          react, typescript, nextjs, styled-components, styled-system.
+          My main competence is in react, typescript, nextjs, styled-components,
+          styled-system etc.
         </MoreContentDiv>
         <ButtonContainer>
           <ButtonLayout>
