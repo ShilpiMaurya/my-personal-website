@@ -126,22 +126,28 @@ const Logo = styled.div`
   font-size: 70px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 75px;
+  margin-right: 75px;
   @media (max-width: 970px) {
     font-size: 60px;
   }
   @media (max-width: 800px) {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   @media (max-width: 650px) {
-    margin-left: 100px;
-    margin-right: 100px;
+    font-size: 50px;
+    margin-left: 115px;
+    margin-right: 115px;
   }
   @media (max-width: 450px) {
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media (max-width: 360px) {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 `;
 const LogoText = styled.div`

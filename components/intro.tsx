@@ -49,7 +49,7 @@ const HeadingDiv = styled.div`
 const MoreContentDiv = styled.div`
   padding-top: 10px;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.6;
   @media (max-width: 950px) {
     font-size: 18px;
