@@ -203,6 +203,12 @@ const SocioIcons = styled.div`
   justify-content: center;
   padding-top: 20px;
   align-items: center;
+  @media (max-width: 450px) {
+    padding-left: 10px;
+  }
+  @media (max-width: 360px) {
+    padding-left: 20px;
+  }
 `;
 
 const SocioIconsItems = styled.div`
@@ -210,8 +216,8 @@ const SocioIconsItems = styled.div`
   margin-right: 15px;
   margin-left: 15px;
   @media (max-width: 450px) {
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -244,8 +250,8 @@ const ContactPage = () => {
                         src="/linkedin2.jpeg"
                         alt="linkedin logo"
                         layout="fixed"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                       />
                     </a>
                   </SocioIconsItems>
@@ -255,8 +261,8 @@ const ContactPage = () => {
                         src="/medium2.png"
                         alt="Medium logo"
                         layout="fixed"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                       />
                     </a>
                   </SocioIconsItems>
@@ -266,8 +272,8 @@ const ContactPage = () => {
                         src="/github2.png"
                         alt="Github logo"
                         layout="fixed"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                       />
                     </a>
                   </SocioIconsItems>
