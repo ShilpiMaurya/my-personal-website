@@ -35,17 +35,6 @@ const HeadingDiv = styled.div`
   }
 `;
 
-// const ContentDiv = styled.div`
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   font-size: 25px;
-//   font-weight: 250;
-//   line-height: 1.6;
-//   @media (max-width: 950px) {
-//     font-size: 20px;
-//   }
-// `;
-
 const MoreContentDiv = styled.div`
   padding-top: 10px;
   font-size: 22px;
@@ -102,15 +91,6 @@ const Intro = ({ pageRef }) => {
           <HeadingDiv>ABOUT ME</HeadingDiv>
         </HeadingContainer>
         <MoreContentDiv>
-          {/* Started self-taught developer's journey about two years ago, used
-          various online platforms like codecademy, udemy to learn the basics of
-          HTML, CSS and JS, after that learnt about different libaries and
-          frameworks like React, styled-components, styled-system, framer-motion
-          etc simultaenously working on different projects and blogs. */}
-          {/* Started self-taught developer's journey about two years ago, used
-          various online platforms like codecademy, udemy to learn about the
-          basics of web-development simultaenously working on different projects
-          and blogs. */}
           I'm a freelance front-end developer, interested in exploring and
           providing great user experience on web.
         </MoreContentDiv>
@@ -120,7 +100,10 @@ const Intro = ({ pageRef }) => {
         </MoreContentDiv>
         <ButtonContainer>
           <ButtonLayout>
-            <a href="" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1sgR-xOBkTZ-nvN3_WxrlXgVSYy35iew9/view?ths=true"
+              target="_blank"
+            >
               <ButtonDesign>
                 MY RESUME
                 <Arrow />
@@ -137,39 +120,6 @@ const Intro = ({ pageRef }) => {
           </ButtonLayout>
         </ButtonContainer>
       </Div>
-      {/* <Div>
-        <HeadingContainer>
-          <HeadingDiv>CONTACT ME</HeadingDiv>
-          <Link href="/contact">
-            <Arrow></Arrow>
-          </Link>
-        </HeadingContainer>
-        <ContentDiv>
-          I'll be very exicted to work in some awesome projects and happy to
-          dicuss your development needs. If you think i can help you with your
-          next project, do get in touch.
-          <ContactInfo>
-            <a href="tel:9149235516">+91-9149235516</a>
-          </ContactInfo>
-          <ContactInfo>
-            <a href="mailto:meshilpi94@gmail.com">meshilpi94@gmail.com</a>
-          </ContactInfo>
-        </ContentDiv>
-      </Div> */}
-      {/* <Div>
-        <HeadingContainer>
-          <HeadingDiv>MY BLOGS</HeadingDiv>
-          <Link href="/blogs">
-            <Arrow></Arrow>
-          </Link>
-        </HeadingContainer>
-        <ContentDiv>
-          I have been doing various types of projects from last one year to
-          enhance my skills as a front-end developer, i enjoy learning new
-          things and make a small project about it. I have also written few
-          blogs on medium. Here are a few...
-        </ContentDiv>
-      </Div> */}
     </DivContainer>
   );
 };

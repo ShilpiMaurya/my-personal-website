@@ -98,9 +98,12 @@ const Footer = () => {
           </Link>
         </LinksContent>
         <LinksContent>
-          <Link href="/contact">
-            <a> RESUME</a>
-          </Link>
+          <a
+            href="https://drive.google.com/file/d/1sgR-xOBkTZ-nvN3_WxrlXgVSYy35iew9/view?ths=true"
+            target="_blank"
+          >
+            RESUME
+          </a>
         </LinksContent>
       </LinksContainer>
       <ContactInfo>
