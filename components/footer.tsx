@@ -82,11 +82,6 @@ const Footer = () => {
   return (
     <Container>
       <LinksContainer>
-        {/* <LinksContent>
-          <Link href="/about">
-            <a>ABOUT</a>
-          </Link>
-        </LinksContent> */}
         <LinksContent>
           <Link href="/blogs">
             <a>BLOGS</a>
@@ -98,10 +93,7 @@ const Footer = () => {
           </Link>
         </LinksContent>
         <LinksContent>
-          <a
-            href="https://drive.google.com/file/d/1sgR-xOBkTZ-nvN3_WxrlXgVSYy35iew9/view?ths=true"
-            target="_blank"
-          >
+          <a href="/SHILPI's Resume.pdf" target="_blank">
             RESUME
           </a>
         </LinksContent>

@@ -100,10 +100,7 @@ const Intro = ({ pageRef }) => {
         </MoreContentDiv>
         <ButtonContainer>
           <ButtonLayout>
-            <a
-              href="https://drive.google.com/file/d/1sgR-xOBkTZ-nvN3_WxrlXgVSYy35iew9/view?ths=true"
-              target="_blank"
-            >
+            <a href="/SHILPI's Resume.pdf" target="_blank">
               <ButtonDesign>
                 MY RESUME
                 <Arrow />
