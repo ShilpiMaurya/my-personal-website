@@ -93,7 +93,7 @@ const Footer = () => {
           </Link>
         </LinksContent>
         <LinksContent>
-          <a href="/SHILPI's Resume.pdf" target="_blank">
+          <a href="/SHILPI's Resume.pdf" type="application/pdf" target="_blank">
             RESUME
           </a>
         </LinksContent>
