@@ -27,8 +27,7 @@ hr {
   margin: 0px;
 }
 .logo_image {
-  background: white;
-  border-radius:5px;
+  border-radius: 5px;
 }
 `;
 

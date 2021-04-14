@@ -126,7 +126,7 @@ const Footer = () => {
             <a href="https://medium.com/@meshilpi94" target="_blank">
               <Image
                 className="logo_image"
-                src="/medium2.png"
+                src="/medium4.png"
                 alt="Medium logo"
                 layout="fixed"
                 width={25}
