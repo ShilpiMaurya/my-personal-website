@@ -120,35 +120,33 @@ const LogoDisplay = styled.div`
   }
 `;
 
+const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+`;
+
 const Logo = styled.div`
   background: ${props => props.theme.logoBg};
   color: ${props => props.theme.logoColor};
   font-size: 70px;
+  padding-right: 2.5px;
+  padding-left: 2.5px;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
   text-align: center;
-  margin-left: 75px;
-  margin-right: 75px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   @media (max-width: 970px) {
     font-size: 60px;
   }
-  @media (max-width: 800px) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
   @media (max-width: 650px) {
     font-size: 50px;
-    margin-left: 115px;
-    margin-right: 115px;
   }
   @media (max-width: 450px) {
     font-size: 40px;
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  @media (max-width: 360px) {
-    margin-left: 60px;
-    margin-right: 60px;
   }
 `;
 const LogoText = styled.div`
@@ -230,7 +228,9 @@ const ContactPage = () => {
         <UnderDiv>
           <OverDiv>
             <LogoDisplay>
-              <Logo>SM</Logo>
+              <LogoContainer>
+                <Logo>SM</Logo>
+              </LogoContainer>
               <LogoText>SHILPI MAURYA</LogoText>
             </LogoDisplay>
             <Content>
