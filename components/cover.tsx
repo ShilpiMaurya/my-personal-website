@@ -116,7 +116,6 @@ const CoverPage = ({ handleClick }) => {
         </IntroText>
         <IntroPic>
           <Image
-            className="cover_image"
             src="/Shilpi.png"
             alt="picture of Shilpi Maurya"
             layout="intrinsic"
