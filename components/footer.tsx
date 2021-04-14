@@ -114,7 +114,7 @@ const Footer = () => {
             >
               <Image
                 className="logo_image"
-                src="/linkedin3.png"
+                src="/linkedin4.png"
                 alt="linkedin logo"
                 layout="fixed"
                 width={25}
@@ -137,8 +137,7 @@ const Footer = () => {
           <SocioIconsItems>
             <a href="https://github.com/ShilpiMaurya" target="_blank">
               <Image
-                className="logo_image"
-                src="/github2.png"
+                src="/github4.png"
                 alt="Github logo"
                 layout="fixed"
                 width={25}
