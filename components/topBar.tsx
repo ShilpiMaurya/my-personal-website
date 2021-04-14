@@ -36,8 +36,11 @@ const Logo = styled.div`
   background: ${props => props.theme.logoBg};
   color: ${props => props.theme.logoColor};
   font-size: 40px;
-  margin-right: 10px;
+  padding-right: 3.5px;
+  padding-left: 3.5px;
+  border-radius: 5px;
   cursor: pointer;
+  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @media (max-width: 500px) {
     margin-right: 10px;

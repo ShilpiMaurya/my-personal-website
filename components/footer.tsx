@@ -69,12 +69,13 @@ const ContactInfoContent = styled.div`
 const SocioIcons = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
-  align-items: right;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SocioIconsItems = styled.div`
-  padding-left: 30px;
+  margin-left: 30px;
   cursor: pointer;
 `;
 
@@ -112,7 +113,8 @@ const Footer = () => {
               target="_blank"
             >
               <Image
-                src="/linkedin.png"
+                className="logo_image"
+                src="/linkedin3.png"
                 alt="linkedin logo"
                 layout="fixed"
                 width={25}
@@ -123,7 +125,8 @@ const Footer = () => {
           <SocioIconsItems>
             <a href="https://medium.com/@meshilpi94" target="_blank">
               <Image
-                src="/medium.png"
+                className="logo_image"
+                src="/medium2.png"
                 alt="Medium logo"
                 layout="fixed"
                 width={25}
@@ -134,7 +137,8 @@ const Footer = () => {
           <SocioIconsItems>
             <a href="https://github.com/ShilpiMaurya" target="_blank">
               <Image
-                src="/github.png"
+                className="logo_image"
+                src="/github2.png"
                 alt="Github logo"
                 layout="fixed"
                 width={25}

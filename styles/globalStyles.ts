@@ -26,6 +26,10 @@ hr {
   color: #f5f5f5;
   margin: 0px;
 }
+.logo_image {
+  background: white;
+  border-radius:5px;
+}
 `;
 
 export default GlobalStyles;
