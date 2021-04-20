@@ -28,6 +28,7 @@ const Title = styled.div`
 const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 80px 60px 80px 60px;
   background: ${props => props.theme.blogsPageBg};
   @media (max-width: 1024px) {
