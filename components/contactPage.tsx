@@ -23,40 +23,54 @@ const Title = styled.div`
 `;
 
 const Container = styled.div`
-  padding: 50px 0px 150px 20px;
-  position: relative;
+  padding: 50px 0px 150px 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: ${props => props.theme.contactPageBg};
-  @media (max-width: 800px) {
-    padding: 50px 0px 150px 0px;
+`;
+
+const BoxContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 860px;
+  height: 400px;
+  align-self: center;
+  @media (max-width: 970px) {
+    width: 645px;
+  }
+  @media (max-width: 750px) {
+    width: 540px;
+  }
+  @media (max-width: 650px) {
+    width: 340px;
+  }
+  @media (max-width: 450px) {
+    width: 240px;
+  }
+  @media (max-width: 360px) {
+    width: 210px;
   }
 `;
 
 const UnderDiv = styled.div`
-  position: relative;
+  position: absolute;
   background: ${props => props.theme.contactPageCard};
   height: 400px;
   width: 800px;
   @media (max-width: 970px) {
-    height: 400px;
     width: 600px;
   }
   @media (max-width: 750px) {
-    height: 400px;
     width: 500px;
   }
   @media (max-width: 650px) {
-    height: 400px;
     width: 300px;
   }
   @media (max-width: 450px) {
-    height: 400px;
     width: 200px;
   }
   @media (max-width: 360px) {
-    height: 400px;
     width: 180px;
   }
 `;
@@ -87,22 +101,18 @@ const OverDiv = styled.div`
     left: 45px;
   }
   @media (max-width: 750px) {
-    height: 400px;
     width: 500px;
     top: 40px;
     left: 40px;
   }
   @media (max-width: 650px) {
-    height: 400px;
     width: 300px;
     flex-direction: column;
   }
   @media (max-width: 450px) {
-    height: 400px;
     width: 200px;
   }
   @media (max-width: 360px) {
-    height: 400px;
     width: 180px;
     top: 30px;
     left: 30px;
@@ -225,7 +235,8 @@ const ContactPage = () => {
     <>
       <Title>GET IN TOUCH</Title>
       <Container>
-        <UnderDiv>
+        <BoxContainer>
+          <UnderDiv></UnderDiv>
           <OverDiv>
             <LogoDisplay>
               <LogoContainer>
@@ -282,7 +293,7 @@ const ContactPage = () => {
               </ContactInfo>
             </Content>
           </OverDiv>
-        </UnderDiv>
+        </BoxContainer>
       </Container>
     </>
   );

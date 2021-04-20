@@ -29,6 +29,12 @@ const IntroText = styled.div`
   @media (max-width: 950px) {
     font-size: 40px;
   }
+  @media (max-width: 700px) {
+    font-size: 50px;
+  }
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
   @media (max-width: 690px) {
     padding: 80px 0px 100px 50px;
   }
@@ -46,7 +52,7 @@ const IntroPic = styled.div`
     width: 600px;
     height: 300px;
   }
-  @media (max-width: 555px) {
+  @media (max-width: 700px) {
     width: 0px;
     height: 0px;
   }
