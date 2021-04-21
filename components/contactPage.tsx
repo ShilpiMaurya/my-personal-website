@@ -45,16 +45,20 @@ const BoxContainer = styled.div`
   @media (max-width: 650px) {
     width: 340px;
   }
+  @media (max-width: 550px) {
+    width: 390px;
+  }
   @media (max-width: 450px) {
-    width: 240px;
+    width: 290px;
   }
   @media (max-width: 360px) {
-    width: 210px;
+    width: 250px;
   }
 `;
 
 const UnderDiv = styled.div`
   position: absolute;
+  border-radius: 10px;
   background: ${props => props.theme.contactPageCard};
   height: 400px;
   width: 800px;
@@ -67,16 +71,20 @@ const UnderDiv = styled.div`
   @media (max-width: 650px) {
     width: 300px;
   }
+  @media (max-width: 550px) {
+    width: 350px;
+  }
   @media (max-width: 450px) {
-    width: 200px;
+    width: 250px;
   }
   @media (max-width: 360px) {
-    width: 180px;
+    width: 220px;
   }
 `;
 
 const OverDiv = styled.div`
   position: absolute;
+  border-radius: 10px;
   background: #f5f5f5;
   height: 400px;
   width: 800px;
@@ -109,11 +117,14 @@ const OverDiv = styled.div`
     width: 300px;
     flex-direction: column;
   }
+  @media (max-width: 550px) {
+    width: 350px;
+  }
   @media (max-width: 450px) {
-    width: 200px;
+    width: 250px;
   }
   @media (max-width: 360px) {
-    width: 180px;
+    width: 220px;
     top: 30px;
     left: 30px;
   }

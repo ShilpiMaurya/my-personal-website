@@ -43,6 +43,7 @@ const IntroText = styled.div`
 const IntroPic = styled.div`
   background: white;
   margin-top: 40px;
+  border-radius: 10px;
   position: relative;
   top: 40px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -122,6 +123,7 @@ const CoverPage = ({ handleClick }) => {
         </IntroText>
         <IntroPic>
           <Image
+            className="cover_image"
             src="/Shilpi.png"
             alt="picture of Shilpi Maurya"
             layout="intrinsic"

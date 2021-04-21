@@ -29,6 +29,9 @@ hr {
 .logo_image {
   border-radius: 5px;
 }
+.cover_image{
+  border-radius: 10px;
+}
 `;
 
 export default GlobalStyles;
